@@ -1,5 +1,9 @@
 # StrikeShark Framework 🦈 NodeJs + Express + SCSS
 
+Initilize the project:
+```
+npm install or npm i
+```
 To run this application (Standalone):
 ```
 npm start
