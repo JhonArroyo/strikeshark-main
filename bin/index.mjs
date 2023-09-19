@@ -1,56 +1,31 @@
 import bodyParser from 'body-parser'
 import { config } from 'dotenv'
 import favicon from 'serve-favicon'
-<<<<<<< Updated upstream
-import  express  from 'express'
-import cors from 'cors'
-import  routes  from '../routes/routes.mjs'
-=======
 import express from 'express'
 import os from 'os'
 import cors from 'cors'
 import routes from '../routes/routes.mjs'
->>>>>>> Stashed changes
 // import  db from '../database/connectionDriver.mjs'
 
 config()
 const app = express()
 
-<<<<<<< Updated upstream
-const ip = process.env.IP || "localhost"
-=======
 const ip = process.env.IP
->>>>>>> Stashed changes
 const port = process.env.PORT || 8080
 
 app.set('view engine', 'ejs')
 app.use('/public', express.static('public'))
 app.use(cors({
-<<<<<<< Updated upstream
-  origin: process.envIP+process.env.PORT,
-=======
   origin: process.envIP + process.env.PORT,
->>>>>>> Stashed changes
 }))
 app.use(favicon('./public/favicon.ico'))
 
 // Middleware
-<<<<<<< Updated upstream
-app.use(bodyParser.urlencoded({ extended: false }));
-=======
 app.use(bodyParser.urlencoded({ extended: false }))
->>>>>>> Stashed changes
 
 // routes
 routes(app)
 
-<<<<<<< Updated upstream
-//Note: Each new-strikeshark member should be registed here
-app.listen(port, ip, () => {
-  console.log(`StrikeShark App listening http://${ip}:${port}`)
-})
-
-=======
 const getLocalAddress = () => {
   if (ip == "") {
     const interfaces = os.networkInterfaces();
@@ -98,11 +73,10 @@ app.listen(port, publicAddress, () => {
 process.on('uncaughtException', (error) => {
   if (error.code === 'EADDRNOTAVAIL') {
     console.error('Address not available:', error.message);
-    process.exit(1); 
+    process.exit(1);
   } else {
     // Handle other uncaught exceptions
     console.error('Uncaught exception:', error.message);
     process.exit(1); // Exit the application with a non-zero status
   }
 });
->>>>>>> Stashed changes
