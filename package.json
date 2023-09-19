@@ -1,7 +1,17 @@
 {
+  "name": "strikeshark",
+  "description": "strikeshark framework Node.js w/ Express",
+  "version": "0.0.1",
+  "main": "bin/index.mjs",
+  "author": "JhonArroyo",
+  "license": "ISC",
   "scripts": {
-    "start": "nodemon index.js --host 0.0.0.0",
-    "new-strikeshark": "node modules/createFile.js"
+    "start": "node bin/index.mjs",
+    "dev": "node --watch bin/index.mjs",
+    "new-strikeshark": "node libs/createFile.mjs",
+    "sass:watch": "sass --source-map -w styles/scss/style.scss styles/css/style.css",
+    "sass:debug": "sass --source-map styles/scss/style.scss styles/css/style.css",
+    "sass:release": "sass --style=compressed styles/scss/style.scss public/style.css"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -9,9 +19,13 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.1",
-    "mongoose": "^7.5.0"
+    "https": "^1.0.0",
+    "mongoose": "^7.5.0",
+    "serve-favicon": "^2.5.0",
+    "url": "^0.11.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "sass": "^1.66.1"
   }
 }
