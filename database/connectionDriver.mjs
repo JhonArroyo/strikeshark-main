@@ -1,5 +1,4 @@
-import mongoose from 'mongoose'
-import { config } from 'dotenv'
+import { mongoose, config } from "../libs/packageProviders.mjs"
 
 
 // MongoDB connection URL
@@ -22,5 +21,5 @@ try {
 } catch (error) {
   console.error('Error connecting to the database:', error);
 }
-// Export the Mongoose instance to use in other modules
-export default mongoose
+
+
