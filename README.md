@@ -2,7 +2,7 @@
 
 To initialize the project:
 ```
-npm init | npm i
+npm install | npm i
 ```
 Run project ( Legacy mode ):
 ```
