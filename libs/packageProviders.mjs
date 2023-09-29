@@ -5,7 +5,8 @@ import favicon from 'serve-favicon'
 import express from 'express'
 import os from 'os'
 import cors from 'cors'
-import fs from 'fs';
-import path from 'path';
+import fs from 'fs'
+import path from 'path'
+import mysql from 'mysql'
 
-export { bodyParser, mongoose, config, favicon, express, os, cors, fs, path }
+export { bodyParser, mongoose, config, favicon, express, os, cors, fs, path, mysql }

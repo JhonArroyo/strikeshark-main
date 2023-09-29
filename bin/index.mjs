@@ -1,6 +1,6 @@
 import { bodyParser, config, favicon, express, os, cors } from '../libs/packageProviders.mjs';
 // export db to use connection
-import routes from '../routes/routes'
+import routes from '../routes/routes.mjs'
 
 config()
 const app = express()
