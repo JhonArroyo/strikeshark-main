@@ -9,5 +9,6 @@ import cors from 'cors'
 import fs from 'fs'
 import path from 'path'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import https from 'https'
 
-export { bodyParser, mongoose, mysql, config, favicon, express, os, cors, fs, path, MiniCssExtractPlugin }
+export { bodyParser, mongoose, mysql, config, favicon, express, os, cors, fs, path, MiniCssExtractPlugin, https }
