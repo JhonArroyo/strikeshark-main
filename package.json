@@ -9,13 +9,11 @@
     "start": "node bin/index.mjs",
     "dev": "node --trace-warnings bin/index.mjs",
     "new-strikeshark": "node libs/createFile.mjs",
-    "sass:watch": "sass --source-map -w styles/scss/style.scss styles/css/style.css",
-    "sass:debug": "sass --source-map styles/scss/style.scss styles/css/style.css",
-    "sass:release": "sass --style=compressed styles/scss/style.scss public/style.css"
+    "wbpckg-watch-strikeshark": "webpack --mode development --watch",
+    "wbpckg-build-strikeshark": "webpack --mode production"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
-    "bootstrap": "^5.3.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
@@ -27,7 +25,14 @@
     "url": "^0.11.1"
   },
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
     "nodemon": "^3.0.1",
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
