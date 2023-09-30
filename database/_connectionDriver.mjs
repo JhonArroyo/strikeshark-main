@@ -1,4 +1,4 @@
-import { mongoose, config } from "../libs/packageProviders.mjs"
+import { mongoose, config } from "../libs/_packageProviders.mjs"
 
 
 // MongoDB connection URL

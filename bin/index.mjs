@@ -1,4 +1,4 @@
-import { bodyParser, config, favicon, express, os, cors,  } from '../libs/packageProviders.mjs'
+import { bodyParser, config, favicon, express, os, cors } from '../libs/_packageProviders.mjs'
 // export db to use connection
 import routes from '../routes/routes.mjs'
 

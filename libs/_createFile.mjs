@@ -1,7 +1,7 @@
 /* STRIKESHARK'S 1ST MODULE
 Created by: JhonArroyo 2023-08-02 19:45:56 */
 
-import { fs, path } from "./packageProviders.mjs"
+import { fs, path } from "./_packageProviders.mjs"
 
 // Array Filenames to create custom files extension *TODO*
 const arrayOfObjects = [
@@ -13,6 +13,7 @@ const arrayOfObjects = [
 // Get the custom filename from the command-line arguments
 const customFilename = process.argv[2]
 
+// Under-construction catch DB tool ex. MYSQL, MONGODB, SQLSRV
 // Declare Re-usable variables
 let concatPath
 let filePath
@@ -69,7 +70,7 @@ export async function create${CapitalizedChar}(req, res) {
         
                 // The content to be injected
                 fileContent =       
-`import { mongoose } from '../libs/packageProviders.mjs''
+`import { mongoose } from '../libs/_packageProviders.mjs''
 
 const userSchema = new mongoose.Schema({
   // Place your declarations here  
