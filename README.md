@@ -1,4 +1,4 @@
-# StrikeShark Framework ♥️
+# :shark: StrikeShark Framework :shark:
 
 To run this application:
 
