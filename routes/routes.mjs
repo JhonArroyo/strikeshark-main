@@ -6,5 +6,5 @@ export default (app) => {
   app.get('/', (req, res) => {
     res.render('welcome')
   })
-  // app.get('/', TodoController.customAction);
+  // app.get('/', TodoController.customAction)
 }

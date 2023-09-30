@@ -1,4 +1,4 @@
-import { mongoose, config } from "../libs/packageProviders.mjs"
+import { mongoose, config } from "../libs/_packageProviders.mjs"
 
 
 // MongoDB connection URL
@@ -12,14 +12,14 @@ const dbURL = `mongodb+srv://${username}:${password}@${hostname}/?retryWrites=tr
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-};
+}
 
 // Establish a connection to the database
 try {
-  await mongoose.connect(dbURL, options);
-  console.log('Connected to the Database');
+  await mongoose.connect(dbURL, options)
+  console.log('Connected to the Database')
 } catch (error) {
-  console.error('Error connecting to the database:', error);
+  console.error('Error connecting to the database:', error)
 }
 
 
