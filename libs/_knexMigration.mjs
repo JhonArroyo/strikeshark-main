@@ -4,7 +4,7 @@ config()
 export default {
 
   development: {
-    client: process.env.IS_MYSQL || process.env.IS_MSSQL || process.env.IS_PGSQL,
+    client: process.env.CLIENT,
     connection: {
       host: process.env.MYSQL_HOSTNAME || process.env.MSSQL_HOSTNAME || process.env.PGSQL_HOSTNAME,
       user: process.env.MYSQL_USERNAME || process.env.MSSQL_USERNAME || process.env.PGSQL_HOSTNAME,
@@ -21,3 +21,4 @@ export default {
   }
 }
 
+|| process.env.IS_MSSQL || process.env.IS_PGSQL

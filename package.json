@@ -13,7 +13,9 @@
     "wbpckg:build-strikeshark": "webpack --mode production",
     "migrate:make-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:make",
     "migrate:rollback-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:rollback",
-    "migrate:latest-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:latest"
+    "migrate:latest-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:latest",
+    "seed:make-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs seed:make",
+    "seed:run-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs seed:run"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -37,6 +39,7 @@
     "nodemon": "^3.0.1",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
+    "sqlite3": "^5.1.6",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
