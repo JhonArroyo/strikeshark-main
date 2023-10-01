@@ -2,7 +2,7 @@
   !** strikeshark webpack basic **!
   \*******************************/
 
-import { path, MiniCssExtractPlugin } from './libs/_packageProviders.mjs'
+import { path, MiniCssExtractPlugin } from './libs/providers/_packageProviders.mjs'
 
 export default {
   // mode: 'development', // Set to 'production' for production build

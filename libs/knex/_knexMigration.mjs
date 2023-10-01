@@ -1,4 +1,4 @@
-import { config } from '../libs/_packageProviders.mjs'
+import { config } from '../providers/_packageProviders.mjs'
 config()
 
 export default {
@@ -13,10 +13,10 @@ export default {
     },
     migrations: {
       tableName: 'migrations',
-      directory: '../database/migrations',
+      directory: '../../database/migrations',
     },
     seeds: {
-      directory: '../database/seeds'
+      directory: '../../database/seeds'
     }
   }
 }
