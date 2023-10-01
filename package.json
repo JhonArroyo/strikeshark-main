@@ -8,14 +8,14 @@
   "scripts": {
     "start": "node bin/index.mjs",
     "dev": "node --trace-warnings bin/index.mjs",
-    "new-strikeshark": "node libs/_createFile.mjs",
+    "new-strikeshark": "node libs/kernel/_createFile.mjs",
     "wbpckg:watch-strikeshark": "webpack --mode development --watch",
     "wbpckg:build-strikeshark": "webpack --mode production",
-    "migrate:make-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:make",
-    "migrate:rollback-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:rollback",
-    "migrate:latest-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs migrate:latest",
-    "seed:make-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs seed:make",
-    "seed:run-strikeshark": "npx knex --knexfile libs/_knexMigration.mjs seed:run"
+    "migrate:make-strikeshark": "npx knex --knexfile libs/knex/_knexMigration.mjs migrate:make",
+    "migrate:rollback-strikeshark": "npx knex --knexfile llibs/knex/_knexMigration.mjs migrate:rollback",
+    "migrate:latest-strikeshark": "npx knex --knexfile libs/knex/_knexMigration.mjs migrate:latest",
+    "seed:make-strikeshark": "npx knex --knexfile libs/knex/_knexMigration.mjs seed:make",
+    "seed:run-strikeshark": "npx knex --knexfile libs/knex/_knexMigration.mjs seed:run"
   },
   "dependencies": {
     "body-parser": "^1.20.2",

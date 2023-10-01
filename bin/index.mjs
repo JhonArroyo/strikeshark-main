@@ -1,4 +1,4 @@
-import { bodyParser, config, favicon, express, os, cors } from '../libs/_packageProviders.mjs'
+import { bodyParser, config, favicon, express, os, cors } from '../libs/providers/_packageProviders.mjs'
 // export db to use connection
 import routes from '../routes/routes.mjs'
 
@@ -63,13 +63,13 @@ app.listen(port, localAddress, () => {
 
 // Listen on the network address (public address)b6
 app.listen(port, publicAddress, () => {
-  
+
 })
 
 process.on('uncaughtException', (error) => {
   if (error.code === 'EADDRNOTAVAIL') {
     console.error('Address not available:', error.message)
-    process.exit(1) 
+    process.exit(1)
   } else {
     // Handle other uncaught exceptions
     console.error('Uncaught exception:', error.message)

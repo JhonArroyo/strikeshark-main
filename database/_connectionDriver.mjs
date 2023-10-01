@@ -1,4 +1,8 @@
-import { mongoose, config } from "../libs/_packageProviders.mjs"
+/*
+        underconstruction to knows DB driver selected throught .env file
+*/
+
+/* import { mongoose, config } from "../libs/providers/_packageProviders.mjs"
 
 
 // MongoDB connection URL
@@ -20,6 +24,6 @@ try {
   console.log('Connected to the Database')
 } catch (error) {
   console.error('Error connecting to the database:', error)
-}
+} */
 
 
