@@ -29,7 +29,6 @@ export default {
     new MiniCssExtractPlugin({
       filename: 'strikeshark-main.css'
     })
-
   ]
 }
 
